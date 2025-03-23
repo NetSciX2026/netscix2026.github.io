@@ -1,0 +1,145 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{authblk}
+\usepackage{graphicx}
+\usepackage{mathptmx}
+\usepackage[singlespacing]{setspace}
+\usepackage[headheight=1in,margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multicol}
+
+\usepackage{lipsum}
+
+% Bibliography style
+\usepackage[style=numeric-comp,natbib=true,sorting=none,giveninits=false,backend=biber,terseinits=true]{biblatex}
+\bibliography{sample}
+\renewcommand*{\bibfont}{} 
+\newrobustcmd*{\citefirstlastauthor}{\AtNextCite{\DeclareNameAlias{labelname}{given-family}}\citeauthor}
+\AtEveryBibitem{
+    \clearfield{urlyear}
+    \clearfield{urlmonth}
+    \clearfield{annotation}
+    \clearfield{issn}
+    \clearfield{doi}
+    \clearfield{month}
+    \clearfield{jstor}
+    \clearfield{isbn}
+    \clearfield{eprinttype}
+    \clearfield{eprint}
+}
+
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE \@title \par}%
+  \end{center}%
+  \par
+  \vskip 0.1em}
+\makeatother
+
+\chead{%
+  NetSciX2026: International School and Conference on Network Science\\
+  February 17$^{th}$-20$^{th}$, 2026 - Auckland, New Zealand
+}
+
+\graphicspath{{images/}}
+
+\title{Insert Title Here}
+
+ 
+\date{}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\begin{center}
+\textit{Keywords: Please provide 5 keywords that describe your work}\\
+\end{center}
+
+\section*{Extended Abstract}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum~\cite{patashnik1984bibtex}. 
+Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus mauris. 
+Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt tris- tique, libero. Vivamus viverra fermentum felis. Donec nonummy pellentesque ante. Phasellus adipiscing semper elit. Proin fermentum massa ac quam. Sed diam turpis, molestie vitae, plac- erat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula, eleifend at, accumsan nec, suscipit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem. Sed lacinia nulla vitae enim. Pellentesque tincidunt purus vel magna. Integer non enim. Praesent euismod nunc eu purus. Donec bibendum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu enim. Vestibulum pellentesque felis eu massa. 
+Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt ultri- ces. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In hac habitasse platea dictumst. Integer tempus convallis augue. Etiam facilisis. Nunc elementum fermentum wisi. Aenean placerat. Ut imperdiet, enim sed gravida sollicitudin, felis odio placerat quam, ac pulvinar elit purus eget enim. Nunc vitae tortor. Proin tempus nibh sit amet nisl. Vivamus quis tortor vitae risus porta vehicula. 
+Fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla a faucibus semper, leo velit ultricies tellus, ac venenatis arcu wisi vel nisl. Vestibulum diam. Aliquam pellentesque, augue quis sagittis posuere, turpis lacus congue quam, in hendrerit risus eros eget felis. Mae- cenas eget erat in sapien mattis porttitor. Vestibulum porttitor. Nulla facilisi. Sed a turpis eu lacus commodo facilisis. Morbi fringilla, wisi in dignissim interdum, justo lectus sagittis dui, et vehicula libero dui cursus dui. Mauris tempor ligula sed lacus. Duis cursus enim ut augue. Cras ac magna. Cras nulla. Nulla egestas. Curabitur a leo. Quisque egestas wisi eget nunc. Nam feugiat lacus vel est. Curabitur consectetuer. 
+Suspendisse vel felis. Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet vitae, arcu. Aenean faucibus pede eu ante. Praesent enim elit, rutrum at, molestie non, nonummy vel, nisl. 
+Ut lectus eros, malesuada sit amet, fermentum eu, sodales cursus, magna. Donec eu purus. Quisque vehicula, urna sed ultricies auctor, pede lorem egestas dui, et convallis elit erat sed nulla. Donec luctus. 
+
+%%%%%%%%%%%%%%%%%%%%%
+% REFERENCES
+%%%%%%%%%%%%%%%%%%%%%
+
+\section*{References}
+\printbibliography[heading=none]
+
+...
+
+%%%%%%%%%%%%%%%%%%%%%
+% TABLE
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[h]
+\centering
+\caption{\textbf{Title.} Description.}
+\label{tbl:my_table}
+\begin{tabular}{@{}llr@{}}
+\toprule
+Column 1 & Column 2 & Column 3 \\ \midrule
+Cell 1a & Cell 2a & Number 3a \\
+Cell 1b & Cell 2b & Number 3b \\ \bottomrule
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%
+% FIGURE
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\textwidth]{noun-image-1269202.png}
+\caption{\textbf{Title.} Description.}
+\label{fig:image}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% GUIDELINES (DELETE)
+%%%%%%%%%%%%%%%%%%%%%
+
+\vskip 40pt
+\underline {Guidelines:}
+\begin{itemize}
+\itemsep0pt
+  \item 2 page maximum for main content (including tables, figures, and references)
+  \item Single spaced
+  \item Font – Times New Roman, 12pt
+  \item 1-inch margins
+  \item Do not include author names for blind review and remove any information that may identify the author(s)
+\end{itemize}
+
+\underline {Include in Order:}
+\begin{itemize}
+\itemsep0pt
+  \item Paper title
+  \item 5 keywords
+  \item Extended abstract 
+  \item References
+  \item Figure(s) or Table(s)
+\end{itemize}
+
+
+\end{document}
